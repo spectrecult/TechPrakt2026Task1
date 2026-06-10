@@ -1,16 +1,54 @@
-# React + Vite
+# Житомирська політехніка
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Житомирська політехніка](https://media.ztu.edu.ua/wp-content/uploads/2020/02/Group-6-1-1536x465.png)
 
-Currently, two official plugins are available:
+Виконання лабораторної роботи передбачає вивчення прийомів роботи з системою контролю версій Git:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* створення віддаленого репозиторію;
+* клонування віддаленого репозиторію;
+* виконання комітів;
+* створення гілок та перемикання між ними;
+* виконання комітів у різних гілках;
+* аутентифікація на GitHub за допомогою токена та через SSH;
+* вивантаження локального репозиторію на GitHub.
 
-## React Compiler
+## У практичній роботі №1 було:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Створено локальний репозиторій.
+2. Створено віддалений репозиторій на GitHub.
+3. Зроблено коміти у локальному репозиторії.
+4. Вивантажено усі коміти з локального у віддалений репозиторій.
 
-## Expanding the ESLint configuration
+## Використані команди Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* [x] git init
+* [x] git status
+* [x] git add
+* [x] git commit
+* [x] git remote add
+* [x] git push
+* [x] git pull
+* [ ] git branch
+
+---
+
+### Conventional Commits
+
+Для пунктів 4–7 були використані такі повідомлення комітів:
+
+```bash
+chore: add gitignore configuration
+feat: add task creation functionality
+feat: add task completion toggle
+docs: update README documentation
+```
+
+---
+
+### Посилання на репозиторій
+
+[GitHub Repository](https://github.com/spectrecult/TechPrakt2026Task1)
+
+---
+
+Виконав: **Салабай Іван**
