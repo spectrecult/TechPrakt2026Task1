@@ -7,8 +7,24 @@ function App() {
   const addTask = () => {
     if (!input.trim()) return;
 
-    setTasks([...tasks, input]);
+    setTasks([
+      ...tasks,
+      {
+        text: input,
+        done: false
+      }
+    ]);
+
     setInput('');
+  };
+
+  const toggleTask = (index) => {
+    const updated = [...tasks];
+
+    updated[index].done =
+        !updated[index].done;
+
+    setTasks(updated);
   };
 
   return (
@@ -26,7 +42,19 @@ function App() {
 
         <ul>
           {tasks.map((task, index) => (
-              <li key={index}>{task}</li>
+              <li
+                  key={index}
+                  onClick={() => toggleTask(index)}
+                  style={{
+                    textDecoration:
+                        task.done
+                            ? 'line-through'
+                            : 'none',
+                    cursor: 'pointer'
+                  }}
+              >
+                {task.text}
+              </li>
           ))}
         </ul>
       </>
